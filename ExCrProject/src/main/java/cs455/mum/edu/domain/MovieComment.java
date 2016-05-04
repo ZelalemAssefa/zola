@@ -18,7 +18,7 @@ public class MovieComment {
  private String comment;
  @ManyToOne
  private Movie movie;
- 
+ //comment
 public int getId() {
 	return id;
 }

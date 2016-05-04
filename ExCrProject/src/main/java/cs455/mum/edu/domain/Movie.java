@@ -22,8 +22,8 @@ public class Movie {
    @Lob
    private byte[] poster;
    private String summary;
-   @Temporal(TemporalType.DATE)
-   private Date year;
+  
+   private int year;
    @ManyToMany(mappedBy="movie")
    private List<Artist> artists=new ArrayList<Artist>();
    @OneToMany
@@ -58,10 +58,10 @@ public String getSummary() {
 public void setSummary(String summary) {
 	this.summary = summary;
 }
-public Date getYear() {
+public int getYear() {
 	return year;
 }
-public void setYear(Date year) {
+public void setYear(int year) {
 	this.year = year;
 }
 public List<Artist> getArtists() {

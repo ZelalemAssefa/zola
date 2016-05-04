@@ -7,6 +7,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import cs455.mum.edu.domain.Movie;
+
 
 
 
@@ -32,7 +34,10 @@ public class App
 
 		EntityManager entitymanager = emf.createEntityManager();
 		entitymanager.getTransaction().begin();
-
+           Movie mv1=new Movie();
+           mv1.setTitle("Titanic");
+           mv1.setYear(1995);
+           //i will continue on this
 		 
                
 		   entitymanager.getTransaction().commit();
